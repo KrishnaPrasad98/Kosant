@@ -20,6 +20,7 @@
             #map-img{
                 width: 35rem;
                 height: 31rem;
+                opacity: 0.3;
             }
         </style>
 </head>
@@ -54,13 +55,13 @@
         <div class="seg2 flex justify-between">
             <div class="seg2-left ">
                 <h1 class="text-6xl font-bold mt-16">Our world is your <br> destination</h1>
-                <p class="font-medium text-zinc-400 mt-8">We give you more of what you want and less of <br> what you dont need.</p>
+                <p class="text-xl font-medium text-zinc-400 mt-8">We give you more of what you want and less of <br> what you dont need.</p>
                     <div class="input-search mt-16 mb-9">
-                        <input class="rounded-l-lg p-1 border-t  border-b border-l text-gray-800 border-gray-200 bg-white" placeholder="start your search"/>
-                		<button class="px-3 rounded-r-lg bg-indigo-600  text-white font-medium p-1  -ml-1.5 border-indigo-700 border-t border-b border-r">Search</button>
+                        <input class="rounded-l-lg p-1 border-t-2  border-b-2 border-l-2 text-gray-800 border-gray-200 bg-white" placeholder="start your search"/>
+                		<button class="px-3 rounded-r-lg bg-indigo-600  text-white font-medium p-1  -ml-1.5 border-indigo-700 border-t-2 border-b-2 border-r-2">Search</button>
                     </div>
 
-                    <div class="covid border rounded-xl p-5 mr-32">
+                    <div class="covid border-2 rounded-xl p-5 mr-32">
                         <div class="covid-arrowicon flex items-center mb-4">
                             <a href="#"><p class="text-green-600">Get the latest on our COVID-19 response</p></a>
                             <i class="fa-solid fa-arrow-right mt-1 ml-4"></i>
@@ -68,19 +69,41 @@
                         <p>Lorem ipsum dolor sit amet. <br>Neque dolorem hic placeat! Facilis iste nulla.</p>
                     </div>
             </div>
-            <div style="border: 2px solid red;" class="seg2-right ">
+            
+            <div class="seg2-right">
                 <div class="map-div p-7 pr-20">
                     <img id="map-img" src="https://i.stack.imgur.com/HILmr.png" alt="">
-                    <div style="border: 2px solid red;" class="map-input">
-                        <p>Search Hotels</p>
-                        <p>Find a place that suits your need, it's easy</p>
+                    <div style="bottom: 9rem; left: 45.5rem; background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(5px);" class="map-input absolute border rounded-xl">
+                        <div class="p-4">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-hotel mr-3"></i>
+                                <p class="font-medium">Search Hotels</p>
+                            </div>
+                            <p class="font-medium text-zinc-400">Find a place that suits your need, it's easy</p>
+                        </div>
                         <hr>
-                        <label for="">Place name</label><input class="bg-slate-700" type="text">
-                    </div>
+                        <div class="p-3">
+                           <div class="p-1 py-3">
+                                <i class="fa-solid fa-location-dot mr-2"></i>
+                                <label for="placename" class="font-medium text-zinc-400">Location</label><br><input type="text" class="rounded-xl bg-white-700 py-3" id="placename">
+                           </div> <br>
+                            <div class="flex">
+                                <div class="p-1 py-4">
+                                    <i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>
+                                    <label for="check-in" class="font-medium text-zinc-400">Check-in</label><br><input type="text" class="rounded-xl bg-white-700 py-3" id="check-in">
+                                </div>
+                                <div class="ml-4 p-1 py-4">
+                                    <i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>
+                                    <label for="check-out" class="font-medium text-zinc-400">Check-out</label><br><input type="text" class="rounded-xl bg-white-700 py-3" id="check-out">
+                                </div>
+                            </div>
+                        <!-- No.of people here -->
+                        </div>
+                    </div>                        
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
 </div>
 </body>
