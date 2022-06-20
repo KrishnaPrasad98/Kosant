@@ -6,105 +6,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <script>
-            $(document).ready(function(){
-                $(".fa-arrow-right").hover(function(){
-                    $(this).css('cursor','pointer');
-                });
+    <script>
+        $(document).ready(function () {
+            $(".fa-arrow-right").hover(function () {
+                $(this).css('cursor', 'pointer');
             });
-        </script>
-        <style>
-            #map-img{
-                width: 35rem;
-                height: 31rem;
-                opacity: 0.3;
-            }
-        </style>
+        });
+    </script>
+    <style>
+        #map-img {
+            width: 35rem;
+            height: 31rem;
+            opacity: 0.3;
+        }
+    </style>
 </head>
 
 <body>
     <!-- HEADER -->
-<div class="relative bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="flex justify-between items-center border-b-2 border-gray-100 pb-4 pt-6 md:justify-start md:space-x-10">
-        <!-- LOGO -->
-        <div class="flex justify-start lg:w-0 lg:flex-1">
-          <a href="#">
-            <img class="h-8 w-auto sm:h-10" src="logo.JPG" alt="">
-          </a>
-          
-        </div>
-        <!-- HEADER BUTTONS -->
-        <nav class="hidden md:flex space-x-10">  
-            <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> List Property </a>
-            <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> Location </a>
-            <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> About Us </a>
-            <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> Privacy & Legal </a>
-            <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> Contact </a>
-        </nav>
-        <!-- SIGN UP -->
-        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"> Sign in </a>
-          <a href="#" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"> Sign up </a>
-        </div>
-      </div>
-        <!-- 2nd SEGMENT -->
-        <div class="seg2 flex justify-between">
-            <div class="seg2-left ">
-                <h1 class="text-6xl font-bold mt-16">Our world is your <br> destination</h1>
-                <p class="text-xl font-medium text-zinc-400 mt-8">We give you more of what you want and less of <br> what you dont need.</p>
-                    <div class="input-search mt-16 mb-9">
-                        <input class="rounded-l-lg p-1 border-t-2  border-b-2 border-l-2 text-gray-800 border-gray-200 bg-white" placeholder="start your search"/>
-                		<button class="px-3 rounded-r-lg bg-indigo-600  text-white font-medium p-1  -ml-1.5 border-indigo-700 border-t-2 border-b-2 border-r-2">Search</button>
-                    </div>
+    <div class="lg:max-w-7xl mx-auto px-4">
+        <div
+            class="flex justify-between items-center border-b-2 border-gray-100 pb-4 pt-6 md:justify-start md:space-x-10">
+            <!-- LOGO -->
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="#">
+                    <img class="h-8 w-auto sm:h-10" src="logo.JPG" alt="">
+                </a>
 
-                    <div class="covid border-2 rounded-xl p-5 mr-32">
-                        <div class="covid-arrowicon flex items-center mb-4">
-                            <a href="#"><p class="text-green-600">Get the latest on our COVID-19 response</p></a>
-                            <i class="fa-solid fa-arrow-right mt-1 ml-4"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet. <br>Neque dolorem hic placeat! Facilis iste nulla.</p>
-                    </div>
             </div>
-            
-            <div class="seg2-right">
-                <div class="map-div p-7 pr-20">
-                    <img id="map-img" src="https://i.stack.imgur.com/HILmr.png" alt="">
-                    <div style="bottom: 9rem; left: 45.5rem; background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(5px);" class="map-input absolute border rounded-xl">
-                        <div class="p-4">
-                            <div class="flex items-center">
-                                <i class="fa-solid fa-hotel mr-3"></i>
-                                <p class="font-medium">Search Hotels</p>
-                            </div>
-                            <p class="font-medium text-zinc-400">Find a place that suits your need, it's easy</p>
-                        </div>
-                        <hr>
-                        <div class="p-3">
-                           <div class="p-1 py-3">
-                                <i class="fa-solid fa-location-dot mr-2"></i>
-                                <label for="placename" class="font-medium text-zinc-400">Location</label><br><input type="text" class="rounded-xl bg-white-700 py-3" id="placename">
-                           </div> <br>
-                            <div class="flex">
-                                <div class="p-1 py-4">
-                                    <i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>
-                                    <label for="check-in" class="font-medium text-zinc-400">Check-in</label><br><input type="text" class="rounded-xl bg-white-700 py-3" id="check-in">
-                                </div>
-                                <div class="ml-4 p-1 py-4">
-                                    <i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>
-                                    <label for="check-out" class="font-medium text-zinc-400">Check-out</label><br><input type="text" class="rounded-xl bg-white-700 py-3" id="check-out">
-                                </div>
-                            </div>
-                        <!-- No.of people here -->
-                        </div>
-                    </div>                        
-                </div>
+            <!-- HEADER BUTTONS -->
+            <nav class="hidden md:flex space-x-10">
+                <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> List Property </a>
+                <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> Location </a>
+                <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> About Us </a>
+                <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> Privacy & Legal </a>
+                <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> Contact </a>
+            </nav>
+            <!-- SIGN UP -->
+            <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"> Sign in
+                </a>
+                <a href="#"
+                    class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                    Sign up </a>
             </div>
-
         </div>
     </div>
-</div>
+    <!--DISPLAY 1-->
+    <!-- left segment -->
+    <div class="lg:max-w-7xl mx-auto seg2 flex justify-between">
+        <div class="seg2-left ">
+            <h1 class="text-6xl font-bold mt-16">Our world is your <br> destination</h1>
+            <p class="text-xl font-medium text-zinc-400 mt-8">We give you more of what you want and less of <br>
+                what you dont need.</p>
+            <div class="input-search mt-16 mb-9">
+                <input class="rounded-l-lg p-1 border-t-2  border-b-2 border-l-2 text-gray-800 border-gray-200 bg-white"
+                    placeholder="start your search" />
+                <button
+                    class="px-3 rounded-r-lg bg-indigo-600  text-white font-medium p-1  -ml-1.5 border-indigo-700 border-t-2 border-b-2 border-r-2">Search</button>
+            </div>
+
+            <div class="covid border-2 rounded-xl p-5 mr-32">
+                <div class="covid-arrowicon flex items-center mb-4">
+                    <a href="#">
+                        <p class="text-green-600">Get the latest on our COVID-19 response</p>
+                    </a>
+                    <i class="fa-solid fa-arrow-right mt-1 ml-4"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet. <br>Neque dolorem hic placeat! Facilis iste nulla.</p>
+            </div>
+        </div>
+        <!--right segment-->
+        <div class="seg2-right">
+            <div class="map-div p-7 pr-20">
+                <img id="map-img" src="https://i.stack.imgur.com/HILmr.png" class="sm:">
+                <div style="bottom: 27rem; left: 3.5rem; background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(5px);"
+                    class="map-input relative border rounded-xl md:max-w-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-hotel mr-3"></i>
+                            <p class="font-medium">Search Hotels</p>
+                        </div>
+                        <p class="font-medium text-zinc-400">Find a place that suits your need, it's easy</p>
+                    </div>
+                    <hr>
+                    <div class="p-3 ml-4">
+                        <div class="p-1 py-3">
+                            <i class="fa-solid fa-location-dot mr-2"></i>
+                            <label for="placename" class="font-medium text-zinc-400">Location</label><br><input
+                                type="text" class="rounded-xl bg-white-700 py-3" id="placename">
+                        </div> <br>
+                        <div class="flex">
+                            <div class="p-1 py-4">
+                                <i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>
+                                <label for="check-in" class="font-medium text-zinc-400">Check-in</label><br><input
+                                    type="text" class="rounded-xl bg-white-700 py-3" id="check-in">
+                            </div>
+                            <div class="ml-4 p-1 py-4">
+                                <i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>
+                                <label for="check-out" class="font-medium text-zinc-400">Check-out</label><br><input
+                                    type="text" class="rounded-xl bg-white-700 py-3" id="check-out">
+                            </div>
+                        </div>
+                        <!-- No.of people here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
