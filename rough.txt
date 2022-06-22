@@ -10,3 +10,13 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
     bottom: 20rem;
     left: 44rem;
     background-color: rgba(255, 255, 255, 0.7);
+
+    <div class="lg:hidden text-center border">
+        <ul>
+            <li>List Property</li>
+            <li>Location</li>
+            <li>About us</li>
+            <li>Privacy & Legal</li>
+            <li>Contact</li>
+        </ul>
+    </div>

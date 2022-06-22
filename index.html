@@ -6,27 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui-1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script>
         $(document).ready(function () {
             $(".fa-arrow-right").hover(function () {
                 $(this).css('cursor', 'pointer');
             });
+
+            $(".sm-menu").click(function () {
+                $(".sm-list").slideToggle();
+            });
         });
     </script>
-    <style>
-        #map-img {
-            width: 35rem;
-            height: 31rem;
-            opacity: 0.3;
-        }
-    </style>
 </head>
 
-<body>
+<body class="">
     <!-- HEADER -->
     <div class="lg:max-w-7xl mx-auto px-4">
         <div
@@ -34,9 +34,12 @@
             <!-- LOGO -->
             <div class="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">
-                    <img class="h-8 w-auto sm:h-10" src="logo.JPG" alt="">
+                    <img class="lg:h-10 h-8 w-auto" src="logo.JPG" alt="">
                 </a>
-
+                <svg class="sm-menu h-7 ml-48 lg:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                        d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                </svg>
             </div>
             <!-- HEADER BUTTONS -->
             <nav class="hidden md:flex space-x-10">
@@ -56,68 +59,131 @@
             </div>
         </div>
     </div>
-    <!--DISPLAY 1-->
-    <!-- left segment -->
-    <div class="lg:max-w-7xl mx-auto seg2 flex justify-between">
+    <div class="sm-list lg:hidden hidden text-center border py-5 bg-white absolute w-full">
+        <ul>
+            <a href="#">
+                <li class="p-1">List Property</li>
+            </a>
+            <a href="#">
+                <li class="p-1">Location</li>
+            </a>
+            <a href="#">
+                <li class="p-1">About us</li>
+            </a>
+            <a href="#">
+                <li class="p-1">Privacy & Legal</li>
+            </a>
+            <a href="#">
+                <li class="p-1">Contact</li>
+            </a>
+        </ul>
+    </div>
+    <!--SECTION 1-->
+    <div class="seg2 max-w-7xl px-4 mx-auto grid lg:grid-cols-2 sm:grid-cols-1">
+        <!-- left segment -->
         <div class="seg2-left ">
-            <h1 class="text-6xl font-bold mt-16">Our world is your <br> destination</h1>
-            <p class="text-xl font-medium text-zinc-400 mt-8">We give you more of what you want and less of <br>
+            <p class="lg:text-6xl font-bold lg:mt-16 text-4xl lg:text-left text-center pt-2">Our world is your <br>
+                destination</p>
+            <p class="hidden lg:block text-xl font-medium text-zinc-400 mt-8">We give you more of what you want and less
+                of <br>
                 what you dont need.</p>
-            <div class="input-search mt-16 mb-9">
-                <input class="rounded-l-lg p-1 border-t-2  border-b-2 border-l-2 text-gray-800 border-gray-200 bg-white"
+            <p class="block lg:hidden text-xs font-medium text-center text-zinc-400 mt-2 px-7">We give you more of what
+                you want and less of
+                what you dont need.</p>
+            <div class="input-search lg:p-0 lg:mt-16 lg:mb-9 lg:ml-0 ml-9 mt-24">
+                <input class="rounded-l-lg p-1 border-t-2 border-b-2 border-l-2 text-gray-800 border-gray-200 bg-white"
                     placeholder="start your search" />
                 <button
                     class="px-3 rounded-r-lg bg-indigo-600  text-white font-medium p-1  -ml-1.5 border-indigo-700 border-t-2 border-b-2 border-r-2">Search</button>
             </div>
 
-            <div class="covid border-2 rounded-xl p-5 mr-32">
+            <div class="covid border-2 rounded-xl p-5 lg:mr-32 m-4 mb-20 lg:mb-0 lg:ml-0">
                 <div class="covid-arrowicon flex items-center mb-4">
                     <a href="#">
                         <p class="text-green-600">Get the latest on our COVID-19 response</p>
                     </a>
-                    <i class="fa-solid fa-arrow-right mt-1 ml-4"></i>
+                    <i class="fa-solid fa-arrow-right lg:mt-1 lg:ml-4 mt-2 mr-2"></i>
                 </div>
-                <p>Lorem ipsum dolor sit amet. <br>Neque dolorem hic placeat! Facilis iste nulla.</p>
+                <p class="lg:inline"">Lorem ipsum dolor sit amet. <br>Neque dolorem hic placeat! Facilis iste nulla.</p>
             </div>
         </div>
-        <!--right segment-->
-        <div class="seg2-right">
-            <div class="map-div p-7 pr-20">
-                <img id="map-img" src="https://i.stack.imgur.com/HILmr.png" class="sm:">
-                <div style="bottom: 27rem; left: 3.5rem; background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(5px);"
-                    class="map-input relative border rounded-xl md:max-w-md">
-                    <div class="p-4">
-                        <div class="flex items-center">
-                            <i class="fa-solid fa-hotel mr-3"></i>
-                            <p class="font-medium">Search Hotels</p>
-                        </div>
-                        <p class="font-medium text-zinc-400">Find a place that suits your need, it's easy</p>
-                    </div>
-                    <hr>
-                    <div class="p-3 ml-4">
-                        <div class="p-1 py-3">
-                            <i class="fa-solid fa-location-dot mr-2"></i>
-                            <label for="placename" class="font-medium text-zinc-400">Location</label><br><input
-                                type="text" class="rounded-xl bg-white-700 py-3" id="placename">
-                        </div> <br>
-                        <div class="flex">
-                            <div class="p-1 py-4">
-                                <i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>
-                                <label for="check-in" class="font-medium text-zinc-400">Check-in</label><br><input
-                                    type="text" class="rounded-xl bg-white-700 py-3" id="check-in">
+        <p class=" text-xs ml-20 pl-14 lg:hidden">Book hotel here</p>
+                <img class="h-8 ml-20 pl-20 lg:hidden" src="arrowgif.gif" alt="">
+                <!--right segment-->
+                <div class="map-div lg:px-12 lg:py-12 seg2-right relative">
+                    <img class="h-screen lg:h-full opacity-40" src="map.png">
+                    <!--booking input-->
+                    <div style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(5px);"
+                        class="map-input lg:absolute border rounded-xl md:max-w-md lg:bottom-24 lg:left-24 hidden lg:block">
+                        <div class="p-4">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-hotel mr-3"></i>
+                                <p class="font-medium">Search Hotels</p>
                             </div>
-                            <div class="ml-4 p-1 py-4">
-                                <i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>
-                                <label for="check-out" class="font-medium text-zinc-400">Check-out</label><br><input
-                                    type="text" class="rounded-xl bg-white-700 py-3" id="check-out">
-                            </div>
+                            <p class="font-medium text-zinc-400">Find a place that suits your need, it's easy</p>
                         </div>
-                        <!-- No.of people here -->
+                        <hr>
+                        <div class="p-3 ml-4">
+                            <div class="p-1 py-3">
+                                <i class="fa-solid fa-location-dot mr-2"></i>
+                                <label for="placename" class="font-medium text-zinc-400">Location</label><br><input
+                                    type="text" class="rounded-xl bg-white-700 py-3" id="placename">
+                            </div> <br>
+                            <div class="flex">
+                                <div class="p-1 py-4">
+                                    <i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>
+                                    <label for="check-in" class="font-medium text-zinc-400">Check-in</label><br><input
+                                        type="date" class="rounded-xl bg-white-700 py-3 px-5" id="check-in">
+                                </div>
+                                <div class="ml-4 p-1 py-4">
+                                    <i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>
+                                    <label for="check-out" class="font-medium text-zinc-400">Check-out</label><br><input
+                                        type="date" class="rounded-xl bg-white-700 py-3 px-5" id="check-out">
+                                </div>
+                            </div>
+                            <button
+                                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-10 lg:ml-32 rounded">
+                                Book
+                            </button>
+                        </div>
                     </div>
+                    <!--booking input sm-->
+                    <div class="absolute p-5 lg:hidden top-16">
+                        <div style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(5px);"
+                            class="py-8 grid justify-items-center">
+                            <div class="mb-5">
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-hotel mr-2 ml-20"></i>
+                                    <p class="font-medium text-lg">Search Hotels</p>
+                                </div>
+                                <div class="px-10 text-center">
+                                    <p class="font-xs text-zinc-400">Find a place that suits your need, it's easy</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="location my-5">
+                                <i class="fa-solid fa-location-dot ml-16 mr-2"></i>
+                                <label for="">Location</label> <br>
+                                <input type="text" class="p-3 border rounded-xl">
+                            </div>
+                            <div class="check-in my-5">
+                                <i class="fa-solid fa-arrow-right-arrow-left ml-10 mr-2"></i>
+                                <label for="">Check-in</label><br>
+                                <input type="date" class="p-3 border rounded-xl">
+                            </div>
+                            <div class="check-out my-5">
+                                <i class="fa-solid fa-arrow-right-arrow-left ml-8 mr-2"></i>
+                                <label for="">Check-out</label><br>
+                                <input type="date" class="p-3 border rounded-xl">
+                            </div>
+                            <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-14 rounded">
+                                Book
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </div>
 </body>
 
 </html>
