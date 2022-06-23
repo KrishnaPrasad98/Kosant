@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.structure.css">
     <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
     <script>
         $(document).ready(function () {
             $(".fa-arrow-right").hover(function () {
@@ -22,6 +24,8 @@
             $(".sm-menu").click(function () {
                 $(".sm-list").slideToggle();
             });
+
+
         });
     </script>
 </head>
@@ -34,7 +38,7 @@
             <!-- LOGO -->
             <div class="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">
-                    <img class="lg:h-10 h-8 w-auto" src="logo.JPG" alt="">
+                    <img class="lg:h-10 h-8 w-auto" src="files/logo.JPG" alt="">
                 </a>
                 <svg class="sm-menu h-7 ml-48 lg:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path
@@ -108,10 +112,10 @@
             </div>
         </div>
         <p class=" text-xs ml-20 pl-14 lg:hidden">Book hotel here</p>
-                <img class="h-8 ml-20 pl-20 lg:hidden" src="arrowgif.gif" alt="">
+                <img class="h-8 ml-20 pl-20 lg:hidden" src="files/arrowgif.gif" alt="">
                 <!--right segment-->
-                <div class="map-div lg:px-12 lg:py-12 seg2-right relative">
-                    <img class="h-screen lg:h-full opacity-40" src="map.png">
+                <div class="map-div lg:px-12 lg:pt-8 seg2-right relative">
+                    <img class="h-screen lg:h-full opacity-40" src="files/map.png">
                     <!--booking input-->
                     <div style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(5px);"
                         class="map-input lg:absolute border rounded-xl md:max-w-md lg:bottom-24 lg:left-24 hidden lg:block">
@@ -181,9 +185,126 @@
                             </button>
                         </div>
                     </div>
+                </div>
+    </div>
+    <!--SECTION 2: sm-->
+    <div class="lg:hidden h-screen relative">
+        <p class="text-end text-4xl font-bold mt-14 mb-10 p-4">Popular Destinations</p>
 
+        <div id="default-carousel" class="" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div style="height: 29rem;" class="overflow-hidden relative rounded-lg">
+                 <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img style="height: 16.6rem;" src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/03/04111335/amandari-indonesia-suite-exterior-and-pool_original_11588-2-1401x900.jpg" class="" alt="...">
+                    <div class="p-5">
+                        <p class="font-bold text-2xl mb-4">Bali</p>
+                        <p class="text-gray-500 mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text-center">
+                            <button class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Book now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img  style="height: 16.6rem;" src="https://www.outthere.travel/wp-content/uploads/2015/10/BUlgari-bali.jpg" class="" alt="...">
+                    <div class="p-5">
+                        <p class="font-bold text-2xl mb-4">Hawaii</p>
+                        <p class="text-gray-500 mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text-center">
+                            <button class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Book now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img style="height:16.6rem;" src="https://www.planetware.com/wpimages/2019/11/indonesia-bali-best-beach-resorts-four-seasons-resort-bali-jimbaran-bay.jpg" class="" alt="...">
+                    <div class="p-5">
+                        <p class="font-bold text-2xl mb-4">Amanyara</p>
+                        <p class="text-gray-500 mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text-center">
+                            <button class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Book now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img style="height: 16.6rem;" src="https://cdn.ceoworld.biz/wp-content/uploads/2021/05/Soneva-Fushi.jpg" class="" alt="...">
+                    <div class="p-5">
+                        <p class="font-bold text-2xl mb-4">Maldives</p>
+                        <p class="text-gray-500 mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text-center">
+                            <button class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Book now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img style="height:16.6rem;" src="https://images.thrillophilia.com/image/upload/s--Qjb__Mjw--/c_fill,g_center,h_642,q_auto,w_1280/f_auto,fl_strip_profile/v1/images/photos/000/361/798/original/1606903599_cover_beach_resorts_india.jpg.jpg" class="" alt="...">
+                    <div class="p-5">
+                        <p class="font-bold text-2xl mb-4">Caico island</p>
+                        <p class="text-gray-500 mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text-center">
+                            <button class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Book now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img style="height:16.6rem;" src="https://image.scoopwhoop.com/q30/s3.scoopwhoop.com/anj/goa3/208432817.jpg" class="" alt="...">
+                    <div class="p-5">
+                        <p class="font-bold text-2xl mb-4">Thailand</p>
+                        <p class="text-gray-500 mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text-center">
+                            <button class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Book now</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- Slider indicators -->
+            <div class="flex absolute bottom-1 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-white-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <span class="hidden">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-white-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="hidden">Next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+    <!--SECTION 2: lg-->
+    <div class="flex max-w-7xl px-4 mx-auto">
+        <div  class="left-segment">
+            <div class="grid">
+                <div style="height:21.3rem; width:32.2rem;"><img class="rounded-lg" src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__480.jpg" alt=""></div>
+                <div class="flex">
+                    <img id="bali" class="h-20 rounded-lg mr-2 mt-2 hover:outline outline-2 outline-indigo-400" src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__480.jpg" alt="">
+                    <img id="Hawaii" class="h-20 rounded-lg mr-2 mt-2 hover:outline outline-2 outline-indigo-400" src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__480.jpg" alt="">
+                    <img id="Amanyara" class="h-20 rounded-lg mr-2 mt-2 hover:outline outline-2 outline-indigo-400" src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__480.jpg" alt="">
+                    <img id="Maldives" class="h-20 rounded-lg mt-2 hover:outline outline-2 outline-indigo-400" src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__480.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div style="border:1px solid red;" class="right-segment">
+            <div class="place-name">
+                
+            </div>
+        </div>
+    </div>
+<script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 </body>
 
 </html>

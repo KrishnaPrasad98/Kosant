@@ -20,3 +20,15 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
             <li>Contact</li>
         </ul>
     </div>
+
+    style="border:1px solid red;"
+
+                    <!-- <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span> -->
+     Soneva Fushi, Maldives. Soneva Fushi has situated in Baa Atoll island archipelago which is a UNESCO world biosphere. ...
+Banyan Tree resort, Seychelles. ...
+Amanyara, Turks and Caico island. ...
+Soneva Kiri, Koh Kood, Thailand. ...
+Belmond Maroma resort and spa, Riveria Maya, Mexico.
+
+
+
