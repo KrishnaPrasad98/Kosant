@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.structure.css">
     <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+
     <script>
         $(document).ready(function () {
             $(".fa-arrow-right").hover(function () {
@@ -40,6 +42,15 @@
             $("#Maldives").click(function () {
                 $("#display-img").attr("src", "https://cdn.ceoworld.biz/wp-content/uploads/2021/05/Soneva-Fushi.jpg");
                 $("#pd-text").html("Lorem iusto quis dicta quam quos. <br> facilis iusto eligendi.");
+            });
+
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: true,
+                prevArrow: '<button style="position:absolute; left:69rem; bottom:29.8rem;" class="border-2 rounded-md bg-white hover:bg-slate-300 p-4"><i class="fa-solid fa-arrow-left"></i></button>',
+                nextArrow: '<button style="position:absolute; left:73rem; bottom:29.8rem;" class="border-2 rounded-md bg-white hover:bg-slate-300 p-4"><i class="fa-solid fa-arrow-right"></i></button>'
             });
         });
     </script>
@@ -78,6 +89,7 @@
             </div>
         </div>
     </div>
+    <!--header sm-->
     <div class="sm-list lg:hidden hidden text-center border py-5 bg-white absolute w-full">
         <ul>
             <a href="#">
@@ -101,7 +113,7 @@
     <section class="seg2 max-w-7xl px-4 mx-auto grid lg:grid-cols-2 sm:grid-cols-1 lg:mb-24">
         <!-- left segment -->
         <div class="seg2-left ">
-            <p class="lg:text-6xl font-bold lg:mt-16 text-4xl lg:text-left text-center pt-2">Our world is your <br>
+            <p class="lg:text-7xl font-bold lg:mt-16 text-4xl lg:text-left text-center pt-2">Our world is your <br>
                 destination</p>
             <p class="hidden lg:block text-xl font-medium text-zinc-400 mt-8">We give you more of what you want and less
                 of <br>
@@ -130,9 +142,9 @@
                 <img class="h-8 ml-20 pl-20 lg:hidden" src="files/arrowgif.gif" alt="">
                 <!--right segment-->
                 <div class="map-div lg:px-12 lg:pt-8 seg2-right relative">
-                    <img class="h-screen lg:h-full opacity-40" src="files/map.png">
+                    <img class="h-screen lg:h-full opacity-20" src="files/1_qYUvh-EtES8dtgKiBRiLsA.png">
                     <!--booking input-->
-                    <div style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(5px);"
+                    <div style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(3px);"
                         class="map-input lg:absolute border rounded-xl md:max-w-md lg:bottom-24 lg:left-24 hidden lg:block">
                         <div class="p-4">
                             <div class="flex items-center">
@@ -342,7 +354,7 @@
         </div>
     </section>
     <!--SECTION 2: lg-->
-    <section class="hidden lg:flex justify-between max-w-7xl px-4 mx-auto">
+    <section class="hidden lg:flex justify-between max-w-7xl px-4 mx-auto mb-24">
         <div class="left-segment">
             <div class="grid">
                 <div style="height:21.3rem; width:33rem;" class="overflow-hidden rounded-lg"><img id="display-img"
@@ -366,12 +378,188 @@
 
         <div class="right-segment">
             <p class="text-5xl font-bold mr-56 mt-20">Popular<br>Destination</p>
-            <p id="pd-text" class="mt-8">Lorem ipsum dolor sit amet consectetur. <br>
+            <p id="pd-text" class="mt-8 text-zinc-400">Lorem ipsum dolor sit amet consectetur. <br>
                 adipisicing elit, Culpa facere.</p>
             <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded mt-12 ml-16">Book
                 Now</button>
         </div>
     </section>
+    <!--SECTION 3: lg-->
+    <section class="hidden lg:block max-w-7xl px-4 mx-auto">
+        <!--upper-->
+        <div class="uppersection flex items-center justify-between mb-20">
+            <div class="leftdivsection">
+                <p class="text-5xl font-bold">Hot Destination</p>
+                <p class="text-zinc-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Consectetur nulla quod id sunt quidem tempore.</p>
+            </div>
+            <!-- <div style="border:1px solid red;" class="rightdivsection">
+                <!-- <button class="border-2 rounded-md bg-white hover:bg-slate-300 p-4"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="border-2 rounded-md bg-white hover:bg-slate-300 p-4"><i class="fa-solid fa-arrow-right"></i></button>
+            </div> -->
+        </div>
+        <!--lower-->
+            <div class="multiple-items">
+
+                <div class="card1 p-2">
+                    <div class="roompic"><img class="rounded-2xl h-72" src="https://i.pinimg.com/736x/94/f6/cf/94f6cfa91e9696bedb34cb79ae087eda--design-urban-outdoor-decor.jpg" alt=""></div>
+                    <div class="roomdetails">
+                        <div class="flex justify-between p-1 py-3">
+                            <p class="text-xl font-medium">Hotel Deluna Suzer</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between p-1 py-3">
+                            <div class="flex -space-x-2 overflow-hidden">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                <a class="inline-block h-8 w-8 rounded-full ring-2 ring-white bg-slate-600 text-xs flex items-center justify-center text-white" href="#">+223</a>
+                            </div>
+                            <div class="border border-1 border-green-700 rounded h-8 w-32 flex items-center justify-center text-green-700 font-medium">227 Reviewers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card2 p-2">
+                    <div class="roompic"><img class="rounded-2xl h-72" src="https://i.pinimg.com/736x/23/46/ae/2346ae377f7204447ca5cb5dfc7ba0f1--landscape-wallpapers-landscape-walls.jpg" alt=""></div>
+                    <div class="roomdetails">
+                        <div class="flex justify-between p-1 py-3">
+                            <p class="text-xl font-medium">Pearl Breeze</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between p-1 py-3">
+                            <div class="flex -space-x-2 overflow-hidden">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/65.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/71.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/91.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/7.jpg" alt="">
+                                <a class="inline-block h-8 w-8 rounded-full ring-2 ring-white bg-slate-600 text-xs flex items-center justify-center text-white" href="#">+106</a>
+                            </div>
+                            <div class="border border-1 border-green-700 rounded h-8 w-32 flex items-center justify-center text-green-700 font-medium">110 Reviewers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card3 p-2">
+                    <div class="roompic"><img class="rounded-2xl h-72" src="https://i.pinimg.com/736x/e0/ed/e4/e0ede411919367334065c141a94f4296--spa-hotel-bodrum.jpg" alt=""></div>
+                    <div class="roomdetails">
+                        <div class="flex justify-between p-1 py-3">
+                            <p class="text-xl font-medium">Melanie Spa</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between p-1 py-3">
+                            <div class="flex -space-x-2 overflow-hidden">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/29.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/33.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/52.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/31.jpg" alt="">
+                                <a class="inline-block h-8 w-8 rounded-full ring-2 ring-white bg-slate-600 text-xs flex items-center justify-center text-white" href="#">+178</a>
+                            </div>
+                            <div class="border border-1 border-green-700 rounded h-8 w-32 flex items-center justify-center text-green-700 font-medium">182 Reviewers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card4 p-2">
+                    <div class="roompic"><img class="rounded-2xl h-72" src="https://i.pinimg.com/originals/72/2d/c5/722dc596aeb04324e603b0c36629f4e4.jpg" alt=""></div>
+                    <div class="roomdetails">
+                        <div class="flex justify-between p-1 py-3">
+                            <p class="text-xl font-medium">The Gregory</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between p-1 py-3">
+                            <div class="flex -space-x-2 overflow-hidden">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/60.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/85.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/54.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+                                <a class="inline-block h-8 w-8 rounded-full ring-2 ring-white bg-slate-600 text-xs flex items-center justify-center text-white" href="#">+236</a>
+                            </div>
+                            <div class="border border-1 border-green-700 rounded h-8 w-32 flex items-center justify-center text-green-700 font-medium">240 Reviewers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card5 p-2">
+                    <div class="roompic"><img class="rounded-2xl h-72" src="https://www.puredestinations.co.uk/wp-content/uploads/2020/03/OneOnly-Cape-Town-Penthouse-Suite-The-Best-Balcony-Views-Around-the-World-.jpg" alt=""></div>
+                    <div class="roomdetails">
+                        <div class="flex justify-between p-1 py-3">
+                            <p class="text-xl font-medium">Indigo</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between p-1 py-3">
+                            <div class="flex -space-x-2 overflow-hidden">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/83.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/43.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/49.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
+                                <a class="inline-block h-8 w-8 rounded-full ring-2 ring-white bg-slate-600 text-xs flex items-center justify-center text-white" href="#">+234</a>
+                            </div>
+                            <div class="border border-1 border-green-700 rounded h-8 w-32 flex items-center justify-center text-green-700 font-medium">238 Reviewers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card6 p-2">
+                    <div class="roompic"><img class="rounded-2xl h-72" src="https://www.perlentravel.com/photos/29-2-ArenaBeachHotelatMaafushiDeluxeDoubleRoomwithBalconyandSeaViewDoubleRoomwithBalconyandSeaview-bad232a2e4b3a631d6f3ec13ac56e9ba3-med.jpg" alt=""></div>
+                    <div class="roomdetails">
+                        <div class="flex justify-between p-1 py-3">
+                            <p class="text-xl font-medium">Dritan Stay</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between p-1 py-3">
+                            <div class="flex -space-x-2 overflow-hidden">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/26.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/64.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/57.jpg" alt="">
+                                <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/49.jpg" alt="">
+                                <a class="inline-block h-8 w-8 rounded-full ring-2 ring-white bg-slate-600 text-xs flex items-center justify-center text-white" href="#">+356</a>
+                            </div>
+                            <div class="border border-1 border-green-700 rounded h-8 w-32 flex items-center justify-center text-green-700 font-medium">360 Reviewers</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 </body>
 
