@@ -52,8 +52,18 @@
                 prevArrow: '<button style="position:absolute; left:69rem; bottom:29.8rem;" class="border-2 rounded-md bg-white hover:bg-slate-300 p-4"><i class="fa-solid fa-arrow-left"></i></button>',
                 nextArrow: '<button style="position:absolute; left:73rem; bottom:29.8rem;" class="border-2 rounded-md bg-white hover:bg-slate-300 p-4"><i class="fa-solid fa-arrow-right"></i></button>'
             });
+
+            $('#gotop-btn').click(function(){
+                $('html,body').animate({scrollTop:'0px'}, 1500);
+            });
         });
     </script>
+    <style>
+        .text-center li{
+            padding-bottom: 2rem;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body class="">
@@ -89,7 +99,7 @@
             </div>
         </div>
     </div>
-    <!--header sm-->
+    <!--header sm-menu-->
     <div class="sm-list lg:hidden hidden text-center border py-5 bg-white absolute w-full">
         <ul>
             <a href="#">
@@ -114,7 +124,7 @@
         <!-- left segment -->
         <div class="seg2-left ">
             <p class="lg:text-7xl font-bold lg:mt-16 text-4xl lg:text-left text-center pt-2">Our world is your <br>
-                destination</p>
+                destination.</p>
             <p class="hidden lg:block text-xl font-medium text-zinc-400 mt-8">We give you more of what you want and less
                 of <br>
                 what you dont need.</p>
@@ -215,8 +225,8 @@
                 </div>
     </section>
     <!--SECTION 2: sm-->
-    <section class="lg:hidden h-screen relative">
-        <p class="text-end text-4xl font-bold mt-14 mb-10 p-4">Popular Destinations</p>
+    <section class="lg:hidden h-screen relative mb-14">
+        <p class="text-center text-4xl font-bold mt-14 mb-10 p-4">Popular Destinations.</p>
 
         <div id="default-carousel" class="" data-carousel="static">
             <!-- Carousel wrapper -->
@@ -377,8 +387,8 @@
         </div>
 
         <div class="right-segment">
-            <p class="text-5xl font-bold mr-56 mt-20">Popular<br>Destination</p>
-            <p id="pd-text" class="mt-8 text-zinc-400">Lorem ipsum dolor sit amet consectetur. <br>
+            <p class="text-5xl font-bold mr-56 mt-20">Popular<br>Destination.</p>
+            <p id="pd-text" class="mt-5 text-zinc-400">Lorem ipsum dolor sit amet consectetur. <br>
                 adipisicing elit, Culpa facere.</p>
             <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded mt-12 ml-16">Book
                 Now</button>
@@ -387,9 +397,9 @@
     <!--SECTION 3: lg-->
     <section class="hidden lg:block max-w-7xl px-4 mx-auto mb-24">
         <!--upper-->
-        <div class="uppersection flex items-center justify-between mb-20">
+        <div class="uppersection flex items-center justify-between mb-16">
             <div class="leftdivsection">
-                <p class="text-5xl font-bold">Hot Destination</p>
+                <p class="text-5xl font-bold mb-4">Hot <br> Destination.</p>
                 <p class="text-zinc-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Consectetur nulla quod id sunt quidem tempore.</p>
             </div>
             <!-- <div style="border:1px solid red;" class="rightdivsection">
@@ -559,10 +569,9 @@
             </div>
     </section>
     <!--SECTION 4: lg-->
-    <section class="max-w-7xl px-4 mx-auto bg-slate-100 py-4">
-        <p class="text-5xl font-bold mb-5">The Luxury of being <br> yourself.</p>
-        <div class="grid grid-cols-7">
-
+    <section class="hidden lg:block max-w-7xl px-4 mx-auto bg-slate-100 py-4">
+        <p class="text-5xl font-bold mb-20">The Luxury of being <br> yourself.</p>
+        <div class="grid grid-cols-7 gap-2 mb-24">
             <div class="col-span-3">
                 <div class="flex">
                     <img style="height: 22rem; width: 22.3rem;" class="rounded-2xl" src="https://wallpapercave.com/wp/wp4470729.jpg" alt="">
@@ -575,7 +584,6 @@
                     <img style="height: 10rem; width: 11rem;" class="rounded-2xl" src="https://wallpapercave.com/wp/wp4470729.jpg" alt="">
                 </div>
             </div>
-
             <div class="grid col-span-3">
                 <p class="h-36 text-sm text-zinc-400 flex justify-center items-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Eos eaque inventore ducimus, debitis eum provident dicta?<br> illo iure reprehenderit, quam molestiae. <br> Eaque voluptatem harum aspernatur.</p>
                 <img style="width: 34rem;" class="h-52 rounded-2xl" src="https://wallpapercave.com/wp/wp4470729.jpg" alt="">
@@ -584,14 +592,92 @@
                     <p class="text-zinc-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Eos eaque inventore ducimus, debitis eum provident dicta?</p>
                 </div>
             </div>
-
             <div>
                 <img class="h-36 rounded-2xl" src="https://wallpapercave.com/wp/wp4470729.jpg" alt="">
             </div>
         </div>
+
+        <div class="grid justify-items-center mb-10">
+            <p class="text-3xl font-bold text-zinc-500 mb-4">Hotels to celebrate life.</p>
+            <p class="text-zinc-400 text-center text-sm mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum veniam <br> beatae temporibus mollitia quo corrupti velit. Dicta impedit deserunt, blanditiis debitis omnis <br> autem inventore, velit asperiores saepe, nemo quidem. Id!</p>
+            <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded">Book
+                Now</button>
+        </div>
     </section>
+    <!--NEWSLETTER: sm-->
+    <section class="lg:hidden mb-14">
+        <p class="text-4xl text-center font-bold mb-10">Subscribe to our <br> newsletter</p>
+        <div class="text-center">
+            <input class="border-t-0 border-r-0 border-l-0 border-b-indigo-700 focus:ring-0 pl-0 pr-24" type="text" placeholder="Email address">
+            <button class="p-2 border border-indigo-600 -ml-1"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </section>
+    <!--NEWSLETTER: lg-->    
+    <div class="hidden lg:flex max-w-7xl px-72 py-24 mx-auto items-center justify-between">
+        <div>
+            <input class="border-t-0 border-r-0 border-l-0 border-b-indigo-700 focus:ring-0 pl-0 pr-24" type="text" placeholder="Email address">
+            <button class="p-2 border border-indigo-600 -ml-1"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <p class="text-4xl font-bold">Subscribe to our <br> newsletter.</p>
+    </div>
+    <!--FOOTER: sm-->
+    <footer class="lg:hidden bg-slate-100">
+        <img class="h-14 mb-10" style="padding-left: 5.5rem;" src="files/logo.JPG" alt="">
+        <ul class="text-center text-slate-600">
+            <li>List Property</li>
+            <li>Location</li>
+            <li>Privacy & Legal</li>
+            <li>Contact</li>
+        </ul>
+        <div class="flex justify-center">
+            <img class="mr-10" src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/>
+            <img class="mr-10" src="https://img.icons8.com/ios-filled/30/000000/instagram-new.png"/>
+            <img src="https://img.icons8.com/ios-filled/30/000000/twitter.png"/>
+        </div>
+        <p class="text-sm mt-3 text-slate-400">Copyright © 2022. KosAnt. All rights reserved.</p>
+    </footer>
+    <!--FOOTER: lg-->
+    <footer class="hidden lg:block max-w-7xl px-4 mx-auto mb-10 border-t-2"> 
+        <div class="flex justify-around mt-8">
+            <div class="mt-24">
+                <a href="#">
+                    <img class="lg:h-14 w-auto" src="files/logo.JPG" alt="">
+                </a>
+                <p class="">Copyright © 2022. KosAnt. All rights reserved.</p>
+            </div>
+            <div class="flex gap-10">
+                <div class="">
+                    <ul class="grid gap-4">
+                        <li class="text-xl text-indigo-700">Services</li>
+                        <li>Email Marketing</li>
+                        <li>Campaigns</li>
+                        <li>Branding</li>
+                        <li>Offline</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="grid gap-4">
+                        <li class="text-xl text-indigo-700">About</li>
+                        <li>List Property</li>
+                        <li>Location</li>
+                        <li>Privacy & Legal</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid justify-items-center items-center">
+                <div><button class="border-2 border-indigo-700 rounded-full p-3" id="gotop-btn"><i class="fa-solid fa-angle-up"></i></button></div>
+                <div>
+                    <div class="flex">
+                        <img class="mr-10" src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/>
+                        <img class="mr-10" src="https://img.icons8.com/ios-filled/30/000000/instagram-new.png"/>
+                        <img src="https://img.icons8.com/ios-filled/30/000000/twitter.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 </body>
-
 </html>
