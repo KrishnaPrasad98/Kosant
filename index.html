@@ -56,12 +56,35 @@
             $('#gotop-btn').click(function(){
                 $('html,body').animate({scrollTop:'0px'}, 1500);
             });
+
+            $(".incrmnt").click(function(){
+                var i = parseInt($(".personinput").val());
+                var i = i + 1;
+                $(".personinput").val(i);
+            });
+            $(".decrmnt").click(function(){
+                i = parseInt($(".personinput").val());
+                i = i - 1;
+                if(i== 0)
+                    {
+                        i = 1;
+                    }
+                $(".personinput").val(i);
+            });
         });
     </script>
     <style>
         .text-center li{
             padding-bottom: 2rem;
             font-weight: bold;
+        }
+
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0;   
         }
     </style>
 </head>
@@ -132,7 +155,7 @@
                 you want and less of
                 what you dont need.</p>
             <div class="input-search lg:p-0 lg:mt-16 lg:mb-9 lg:ml-0 ml-9 mt-24">
-                <input class="rounded-l-lg p-1 border-t-2 border-b-2 border-l-2 text-gray-800 border-gray-200 bg-white"
+                <input class="rounded-l-lg p-1 border-t-2 border-b-2 border-l-2 text-gray-800 border-indigo-800 bg-white text-center focus:outline-none"
                     placeholder="start your search" />
                 <button
                     class="px-3 rounded-r-lg bg-indigo-600  text-white font-medium p-1  -ml-1.5 border-indigo-700 border-t-2 border-b-2 border-r-2">Search</button>
@@ -155,7 +178,7 @@
                     <img class="h-screen lg:h-full opacity-20" src="files/1_qYUvh-EtES8dtgKiBRiLsA.png">
                     <!--booking input-->
                     <div style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(3px);"
-                        class="map-input lg:absolute border rounded-xl md:max-w-md lg:bottom-24 lg:left-24 hidden lg:block">
+                        class="map-input lg:absolute border rounded-xl md:max-w-md lg:bottom-9 lg:left-24 hidden lg:block">
                         <div class="p-4">
                             <div class="flex items-center">
                                 <i class="fa-solid fa-hotel mr-3"></i>
@@ -168,22 +191,31 @@
                             <div class="p-1 py-3">
                                 <i class="fa-solid fa-location-dot mr-2"></i>
                                 <label for="placename" class="font-medium text-zinc-400">Location</label><br><input
-                                    type="text" class="rounded-xl bg-white-700 py-3" id="placename">
-                            </div> <br>
+                                    type="text" class="rounded-xl bg-white-700 py-3 focus:ring-0" id="placename">
+                            </div>
                             <div class="flex">
                                 <div class="p-1 py-4">
                                     <i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>
                                     <label for="check-in" class="font-medium text-zinc-400">Check-in</label><br><input
-                                        type="date" class="rounded-xl bg-white-700 py-3 px-5" id="check-in">
+                                        type="date" class="rounded-xl bg-white-700 py-3 px-5 focus:ring-0" id="check-in">
                                 </div>
                                 <div class="ml-4 p-1 py-4">
                                     <i class="fa-solid fa-arrow-right-arrow-left mr-2"></i>
                                     <label for="check-out" class="font-medium text-zinc-400">Check-out</label><br><input
-                                        type="date" class="rounded-xl bg-white-700 py-3 px-5" id="check-out">
+                                        type="date" class="rounded-xl bg-white-700 py-3 px-5 focus:ring-0" id="check-out">
                                 </div>
                             </div>
+                            <div class="py-3">
+                                <div class="flex items-center ml-2">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p class="ml-3 font-medium text-zinc-400">Person</p>
+                                </div>
+                                <button class="incrmnt border-2 p-1 px-3 ">+</i></button>
+                                <input style="max-width: 3rem; text-align: center;" class="personinput border-slate-500 rounded-md focus:ring-0" type="number" value="1">
+                                <button class="decrmnt border-2 p-1 px-3">-</i></button>
+                            </div>
                             <button
-                                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-10 lg:ml-32 rounded">
+                                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-10 lg:ml-32 rounded mt-10">
                                 Book
                             </button>
                         </div>
@@ -372,15 +404,15 @@
                         src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/03/04111335/amandari-indonesia-suite-exterior-and-pool_original_11588-2-1401x900.jpg"
                         alt=""></div>
                 <div class="flex">
-                    <img id="bali" class="h-20 rounded-lg mr-3 mt-4 hover:outline outline-2 outline-indigo-400"
+                    <img id="bali" class="h-20 rounded-lg mr-3 mt-4 hover:outline outline-2 outline-indigo-700"
                         src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/03/04111335/amandari-indonesia-suite-exterior-and-pool_original_11588-2-1401x900.jpg"
                         alt="">
-                    <img id="Hawaii" class="h-20 rounded-lg mr-3 mt-4 hover:outline outline-2 outline-indigo-400"
+                    <img id="Hawaii" class="h-20 rounded-lg mr-3 mt-4 hover:outline outline-2 outline-indigo-700"
                         src="https://www.outthere.travel/wp-content/uploads/2015/10/BUlgari-bali.jpg" alt="">
-                    <img id="Amanyara" class="h-20 rounded-lg mr-3 mt-4 hover:outline outline-2 outline-indigo-400"
+                    <img id="Amanyara" class="h-20 rounded-lg mr-3 mt-4 hover:outline outline-2 outline-indigo-700"
                         src="https://www.planetware.com/wpimages/2019/11/indonesia-bali-best-beach-resorts-four-seasons-resort-bali-jimbaran-bay.jpg"
                         alt="">
-                    <img id="Maldives" class="h-20 rounded-lg mt-4 hover:outline outline-2 outline-indigo-400"
+                    <img id="Maldives" class="h-20 rounded-lg mt-4 hover:outline outline-2 outline-indigo-700"
                         src="https://cdn.ceoworld.biz/wp-content/uploads/2021/05/Soneva-Fushi.jpg" alt="">
                 </div>
             </div>
@@ -679,5 +711,6 @@
     </footer>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 </html>
