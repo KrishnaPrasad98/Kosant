@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script>
         $(document).ready(function () {
             $(".fa-arrow-right").hover(function () {
@@ -69,6 +70,10 @@
                         i = 1;
                     }
                 $(".personinput").val(i);
+            });
+
+            $(function() {
+                AOS.init();
             });
         });
     </script>
@@ -148,22 +153,22 @@
     <section class="seg2 max-w-7xl px-4 mx-auto grid lg:grid-cols-2 sm:grid-cols-1 lg:mb-24">
         <!-- left segment -->
         <div class="seg2-left ">
-            <p class="lg:text-7xl font-bold lg:mt-16 text-4xl lg:text-left text-center pt-2">Our world is your <br>
+            <p class="lg:text-7xl font-bold lg:mt-16 text-4xl lg:text-left text-center pt-2" data-aos="fade" data-aos-duration="1500" data-aos-easing="ease-in-out">Our world is your <br>
                 destination.</p>
-            <p class="hidden lg:block text-xl font-medium text-zinc-400 mt-8">We give you more of what you want and less
+            <p class="hidden lg:block text-xl font-medium text-zinc-400 mt-8" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">We give you more of what you want and less
                 of <br>
                 what you dont need.</p>
-            <p class="block lg:hidden text-xs font-medium text-center text-zinc-400 mt-2 px-7">We give you more of what
+            <p class="block lg:hidden text-xs font-medium text-center text-zinc-400 mt-2 px-7" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">We give you more of what
                 you want and less of
                 what you dont need.</p>
-            <div class="input-search lg:p-0 lg:mt-16 lg:mb-9 lg:ml-0 ml-9 mt-24">
+            <div class="input-search lg:p-0 lg:mt-16 lg:mb-9 lg:ml-0 ml-9 mt-24" data-aos="fade-up" data-aos-duration="400" data-aos-easing="ease-in-out">
                 <input class="rounded-l-lg p-1 border-t-2 border-b-2 border-l-2 text-gray-800 border-indigo-800 bg-white text-center focus:outline-none"
                     placeholder="start your search" />
                 <button
                     class="px-3 rounded-r-lg bg-indigo-600  text-white font-medium p-1  -ml-1.5 border-indigo-700 border-t-2 border-b-2 border-r-2">Search</button>
             </div>
 
-            <div class="covid border-2 rounded-xl p-5 lg:mr-32 m-4 mb-20 lg:mb-0 lg:ml-0">
+            <div class="covid border-2 rounded-xl p-5 lg:mr-32 m-4 mb-20 lg:mb-0 lg:ml-0" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
                 <div class="covid-arrowicon flex items-center mb-4">
                     <a href="#">
                         <p class="text-green-600">Get the latest on our COVID-19 response</p>
@@ -180,7 +185,7 @@
                     <img class="h-screen lg:h-full opacity-20" src="files/1_qYUvh-EtES8dtgKiBRiLsA.png">
                     <!--booking input-->
                     <div style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(3px);"
-                        class="map-input lg:absolute border rounded-xl md:max-w-md lg:bottom-9 lg:left-24 hidden lg:block">
+                        class="map-input lg:absolute border rounded-xl md:max-w-md lg:bottom-9 lg:left-24 hidden lg:block" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
                         <div class="p-4">
                             <div class="flex items-center">
                                 <i class="fa-solid fa-hotel mr-3"></i>
@@ -399,7 +404,7 @@
     </section>
     <!--SECTION 2: lg------->
     <section class="hidden lg:flex justify-between max-w-7xl px-4 mx-auto mb-24">
-        <div class="left-segment">
+        <div class="left-segment" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-out">
             <div class="grid">
                 <div style="height:21.3rem; width:33rem;" class="overflow-hidden rounded-lg"><img id="display-img"
                         class="rounded-lg lg:hover:scale-105 ease-in-out duration-700"
@@ -421,10 +426,10 @@
         </div>
 
         <div class="right-segment">
-            <p class="text-5xl font-bold mr-56 mt-20">Popular<br>Destination.</p>
-            <p id="pd-text" class="mt-5 text-zinc-400">Lorem ipsum dolor sit amet consectetur. <br>
+            <p class="text-5xl font-bold mr-56 mt-20" data-aos="fade" data-aos-duration="1500" data-aos-easing="ease-in-out">Popular<br>Destination.</p>
+            <p id="pd-text" class="mt-5 text-zinc-400" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">Lorem ipsum dolor sit amet consectetur. <br>
                 adipisicing elit, Culpa facere.</p>
-            <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded mt-12 ml-16 hover:scale-105 ease-in-out duration-200">Book
+            <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded mt-12 ml-16 hover:scale-105 ease-in-out duration-200" data-aos="fade-up" data-aos-duration="400" data-aos-easing="ease-in-out">Book
                 Now</button>
         </div>
     </section>
@@ -433,8 +438,8 @@
         <!--upper-->
         <div class="uppersection flex items-center justify-between mb-16">
             <div class="leftdivsection">
-                <p class="text-5xl font-bold mb-4">Hot <br> Destination.</p>
-                <p class="text-zinc-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Consectetur nulla quod id sunt quidem tempore.</p>
+                <p class="text-5xl font-bold mb-4" data-aos="fade" data-aos-duration="1500" data-aos-easing="ease-in-out">Hot <br> Destination.</p>
+                <p class="text-zinc-400" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Consectetur nulla quod id sunt quidem tempore.</p>
             </div>
             <!-- <div style="border:1px solid red;" class="rightdivsection">
                 <!-- <button class="border-2 rounded-md bg-white hover:bg-slate-300 p-4"><i class="fa-solid fa-arrow-left"></i></button>
@@ -444,7 +449,7 @@
         <!--lower-->
             <div class="multiple-items">
 
-                <div class="card1 p-2">
+                <div class="card1 p-2" data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out">
                     <div class="roompic"><img class="rounded-2xl h-72" src="https://i.pinimg.com/736x/94/f6/cf/94f6cfa91e9696bedb34cb79ae087eda--design-urban-outdoor-decor.jpg" alt=""></div>
                     <div class="roomdetails">
                         <div class="flex justify-between p-1 py-3">
@@ -470,7 +475,7 @@
                     </div>
                 </div>
 
-                <div class="card2 p-2">
+                <div class="card2 p-2" data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out">
                     <div class="roompic"><img class="rounded-2xl h-72" src="https://i.pinimg.com/736x/23/46/ae/2346ae377f7204447ca5cb5dfc7ba0f1--landscape-wallpapers-landscape-walls.jpg" alt=""></div>
                     <div class="roomdetails">
                         <div class="flex justify-between p-1 py-3">
@@ -496,7 +501,7 @@
                     </div>
                 </div>
 
-                <div class="card3 p-2">
+                <div class="card3 p-2" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
                     <div class="roompic"><img class="rounded-2xl h-72" src="https://i.pinimg.com/736x/e0/ed/e4/e0ede411919367334065c141a94f4296--spa-hotel-bodrum.jpg" alt=""></div>
                     <div class="roomdetails">
                         <div class="flex justify-between p-1 py-3">
@@ -604,37 +609,37 @@
     </section>
     <!--SECTION 4: lg------->
     <section class="hidden lg:block max-w-7xl px-4 mx-auto bg-slate-100 py-4">
-        <p class="text-5xl font-bold mb-20">The Luxury of being <br> yourself.</p>
+        <p class="text-5xl font-bold mb-20" data-aos="fade" data-aos-duration="1500" data-aos-easing="ease-in-out">The Luxury of being <br> yourself.</p>
         <div class="grid grid-cols-7 gap-2 mb-24">
             <div class="col-span-3">
-                <div style="height: 22rem; width: 22.3rem;" class="flex">
+                <div style="height: 22rem; width: 22.3rem;" class="flex" data-aos="flip-right" data-aos-duration="1100" data-aos-easing="ease-in-out">
                     <img class="rounded-2xl object-cover" src="https://purewows3.imgix.net/images/articles/2019_08/Grand_Velas.jpeg?auto=format,compress&cs=strip" alt="">
                 </div>
                 <div class="flex">
-                    <div class="grid items-center content-evenly px-4">
+                    <div class="grid items-center content-evenly px-4" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
                         <p class="text-xl font-bold">Lorem ipsum</p>
                         <p class="text-zinc-400">Lorem ipsum dolor sit, amet consectetur <br> Eos eaque inventore ducimus, debitis eum provident dicta?</p>
                     </div>
-                    <img style="height: 10rem; width: 11rem;" class="rounded-2xl object-cover" src="https://media.cntraveler.com/photos/5f68c458987090832029b2fa/master/w_2500,h_1667,c_limit/royal-champagne-hotel.jpg" alt="">
+                    <img style="height: 10rem; width: 11rem;" class="rounded-2xl object-cover" data-aos="flip-up" data-aos-duration="1000" data-aos-easing="ease-in-out" src="https://media.cntraveler.com/photos/5f68c458987090832029b2fa/master/w_2500,h_1667,c_limit/royal-champagne-hotel.jpg" alt="">
                 </div>
             </div>
             <div class="grid col-span-3">
-                <p class="h-36 text-sm text-zinc-400 flex justify-center items-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Eos eaque inventore ducimus, debitis eum provident dicta?<br> illo iure reprehenderit, quam molestiae. <br> Eaque voluptatem harum aspernatur.</p>
-                <img style="width: 34rem;" class="h-52 rounded-2xl object-cover" src="https://storage.googleapis.com/wwwstatic.thebreakers.com/filer_public/06/64/06648d27-3f17-4b08-a444-f1b376e6aa73/new_accommodations_guestrms_premiumresort_hero.jpg" alt="">
-                <div class="grid items-center content-evenly mb-5 px-5">
+                <p class="h-36 text-sm text-zinc-400 flex justify-center items-center" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Eos eaque inventore ducimus, debitis eum provident dicta?<br> illo iure reprehenderit, quam molestiae. <br> Eaque voluptatem harum aspernatur.</p>
+                <img style="width: 34rem;" class="h-52 rounded-2xl object-cover" data-aos="flip-left" data-aos-duration="1500" data-aos-easing="ease-in-out" src="https://storage.googleapis.com/wwwstatic.thebreakers.com/filer_public/06/64/06648d27-3f17-4b08-a444-f1b376e6aa73/new_accommodations_guestrms_premiumresort_hero.jpg" alt="">
+                <div class="grid items-center content-evenly mb-5 px-5" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-out">
                     <p class="text-xl font-bold mb-4 mt-4">Lorem ipsum</p>
                     <p class="text-zinc-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Eos eaque inventore ducimus, debitis eum provident dicta?</p>
                 </div>
             </div>
             <div>
-                <img class="h-36 rounded-2xl object-cover" src="https://www.oberoihotels.com/-/media/oberoi-hotels/website-images/the-oberoi-rajvilas-jaipur/room-and-suites/luxury-villa-with-private-pool/detail/_mg_7940.jpg" alt="">
+                <img class="h-36 rounded-2xl object-cover" data-aos="flip-down" data-aos-duration="1100" data-aos-easing="ease-in-out" src="https://www.oberoihotels.com/-/media/oberoi-hotels/website-images/the-oberoi-rajvilas-jaipur/room-and-suites/luxury-villa-with-private-pool/detail/_mg_7940.jpg" alt="">
             </div>
         </div>
 
         <div class="grid justify-items-center mb-10">
             <p class="text-3xl font-bold text-zinc-500 mb-4">Places to celebrate life.</p>
             <p class="text-zinc-400 text-center text-sm mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum veniam <br> beatae temporibus mollitia quo corrupti velit. Dicta impedit deserunt, blanditiis debitis omnis <br> autem inventore, velit asperiores saepe, nemo quidem. Id!</p>
-            <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded hover:scale-105 ease-in-out duration-200">Book
+            <button data-aos="zoom-in-up" data-aos-duration="900" data-aos-easing="ease-in-out" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded hover:scale-105 ease-in-out duration-200">Book
                 Now</button>
         </div>
     </section>
@@ -648,11 +653,11 @@
     </section>
     <!--NEWSLETTER: lg-------->
     <div class="hidden lg:flex max-w-7xl px-72 py-24 mx-auto items-center justify-between">
-        <div>
+        <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
             <input class="border-t-0 border-r-0 border-l-0 border-b-indigo-700 focus:ring-0 pl-0 pr-24" type="text" placeholder="Email address">
             <button class="p-2 border border-indigo-600 -ml-1"><i class="fa-solid fa-angle-right"></i></button>
         </div>
-        <p class="text-4xl font-bold">Subscribe to our <br> newsletter.</p>
+        <p class="text-4xl font-bold" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">Subscribe to our <br> newsletter.</p>
     </div>
     <!--FOOTER: sm-->
     <footer class="lg:hidden bg-slate-100">
@@ -714,5 +719,6 @@
     <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
