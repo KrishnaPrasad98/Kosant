@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
-
     <script>
         $(document).ready(function () {
             $(".fa-arrow-right").hover(function () {
@@ -74,6 +73,9 @@
         });
     </script>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         .text-center li{
             padding-bottom: 2rem;
             font-weight: bold;
@@ -106,7 +108,7 @@
             </div>
             <!-- HEADER BUTTONS -->
             <nav class="hidden md:flex space-x-10">
-                <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> List Property </a>
+                <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> Popular Destination </a>
                 <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> Location </a>
                 <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> About Us </a>
                 <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-900"> Privacy & Legal </a>
@@ -117,7 +119,7 @@
                 <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"> Sign in
                 </a>
                 <a href="#"
-                    class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                    class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 hover:scale-105 ease-in-out duration-200">
                     Sign up </a>
             </div>
         </div>
@@ -142,7 +144,7 @@
             </a>
         </ul>
     </div>
-    <!--SECTION 1-->
+    <!--SECTION 1------->
     <section class="seg2 max-w-7xl px-4 mx-auto grid lg:grid-cols-2 sm:grid-cols-1 lg:mb-24">
         <!-- left segment -->
         <div class="seg2-left ">
@@ -166,7 +168,7 @@
                     <a href="#">
                         <p class="text-green-600">Get the latest on our COVID-19 response</p>
                     </a>
-                    <i class="fa-solid fa-arrow-right lg:mt-1 lg:ml-4 mt-2 mr-2"></i>
+                    <i class="fa-solid fa-arrow-right lg:mt-1 lg:ml-4 mt-2 mr-2 hover:scale-125 ease-in-out duration-200 animate-pulse"></i>
                 </div>
                 <p class="lg:inline"">Lorem ipsum dolor sit amet. <br>Neque dolorem hic placeat! Facilis iste nulla.</p>
             </div>
@@ -210,12 +212,12 @@
                                     <i class="fa-solid fa-user"></i>
                                     <p class="ml-3 font-medium text-zinc-400">Person</p>
                                 </div>
-                                <button class="incrmnt border-2 p-1 px-3 ">+</i></button>
+                                <button class="incrmnt border-2 p-1 px-3 hover:bg-slate-300">+</i></button>
                                 <input style="max-width: 3rem; text-align: center;" class="personinput border-slate-500 rounded-md focus:ring-0" type="number" value="1">
-                                <button class="decrmnt border-2 p-1 px-3">-</i></button>
+                                <button class="decrmnt border-2 p-1 px-3 hover:bg-slate-300">-</i></button>
                             </div>
                             <button
-                                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-10 lg:ml-32 rounded mt-10">
+                                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-10 lg:ml-32 rounded mt-10 hover:scale-105 ease-in-out duration-200">
                                 Book
                             </button>
                         </div>
@@ -395,7 +397,7 @@
             </button>
         </div>
     </section>
-    <!--SECTION 2: lg-->
+    <!--SECTION 2: lg------->
     <section class="hidden lg:flex justify-between max-w-7xl px-4 mx-auto mb-24">
         <div class="left-segment">
             <div class="grid">
@@ -422,11 +424,11 @@
             <p class="text-5xl font-bold mr-56 mt-20">Popular<br>Destination.</p>
             <p id="pd-text" class="mt-5 text-zinc-400">Lorem ipsum dolor sit amet consectetur. <br>
                 adipisicing elit, Culpa facere.</p>
-            <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded mt-12 ml-16">Book
+            <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded mt-12 ml-16 hover:scale-105 ease-in-out duration-200">Book
                 Now</button>
         </div>
     </section>
-    <!--SECTION 3: lg-->
+    <!--SECTION 3: lg------->
     <section class="hidden lg:block max-w-7xl px-4 mx-auto mb-24">
         <!--upper-->
         <div class="uppersection flex items-center justify-between mb-16">
@@ -600,39 +602,39 @@
 
             </div>
     </section>
-    <!--SECTION 4: lg-->
+    <!--SECTION 4: lg------->
     <section class="hidden lg:block max-w-7xl px-4 mx-auto bg-slate-100 py-4">
         <p class="text-5xl font-bold mb-20">The Luxury of being <br> yourself.</p>
         <div class="grid grid-cols-7 gap-2 mb-24">
             <div class="col-span-3">
-                <div class="flex">
-                    <img style="height: 22rem; width: 22.3rem;" class="rounded-2xl" src="https://wallpapercave.com/wp/wp4470729.jpg" alt="">
+                <div style="height: 22rem; width: 22.3rem;" class="flex">
+                    <img class="rounded-2xl object-cover" src="https://purewows3.imgix.net/images/articles/2019_08/Grand_Velas.jpeg?auto=format,compress&cs=strip" alt="">
                 </div>
                 <div class="flex">
                     <div class="grid items-center content-evenly px-4">
                         <p class="text-xl font-bold">Lorem ipsum</p>
                         <p class="text-zinc-400">Lorem ipsum dolor sit, amet consectetur <br> Eos eaque inventore ducimus, debitis eum provident dicta?</p>
                     </div>
-                    <img style="height: 10rem; width: 11rem;" class="rounded-2xl" src="https://wallpapercave.com/wp/wp4470729.jpg" alt="">
+                    <img style="height: 10rem; width: 11rem;" class="rounded-2xl object-cover" src="https://media.cntraveler.com/photos/5f68c458987090832029b2fa/master/w_2500,h_1667,c_limit/royal-champagne-hotel.jpg" alt="">
                 </div>
             </div>
             <div class="grid col-span-3">
                 <p class="h-36 text-sm text-zinc-400 flex justify-center items-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Eos eaque inventore ducimus, debitis eum provident dicta?<br> illo iure reprehenderit, quam molestiae. <br> Eaque voluptatem harum aspernatur.</p>
-                <img style="width: 34rem;" class="h-52 rounded-2xl" src="https://wallpapercave.com/wp/wp4470729.jpg" alt="">
+                <img style="width: 34rem;" class="h-52 rounded-2xl object-cover" src="https://storage.googleapis.com/wwwstatic.thebreakers.com/filer_public/06/64/06648d27-3f17-4b08-a444-f1b376e6aa73/new_accommodations_guestrms_premiumresort_hero.jpg" alt="">
                 <div class="grid items-center content-evenly mb-5 px-5">
                     <p class="text-xl font-bold mb-4 mt-4">Lorem ipsum</p>
                     <p class="text-zinc-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Eos eaque inventore ducimus, debitis eum provident dicta?</p>
                 </div>
             </div>
             <div>
-                <img class="h-36 rounded-2xl" src="https://wallpapercave.com/wp/wp4470729.jpg" alt="">
+                <img class="h-36 rounded-2xl object-cover" src="https://www.oberoihotels.com/-/media/oberoi-hotels/website-images/the-oberoi-rajvilas-jaipur/room-and-suites/luxury-villa-with-private-pool/detail/_mg_7940.jpg" alt="">
             </div>
         </div>
 
         <div class="grid justify-items-center mb-10">
-            <p class="text-3xl font-bold text-zinc-500 mb-4">Hotels to celebrate life.</p>
+            <p class="text-3xl font-bold text-zinc-500 mb-4">Places to celebrate life.</p>
             <p class="text-zinc-400 text-center text-sm mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum veniam <br> beatae temporibus mollitia quo corrupti velit. Dicta impedit deserunt, blanditiis debitis omnis <br> autem inventore, velit asperiores saepe, nemo quidem. Id!</p>
-            <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded">Book
+            <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded hover:scale-105 ease-in-out duration-200">Book
                 Now</button>
         </div>
     </section>
@@ -644,7 +646,7 @@
             <button class="p-2 border border-indigo-600 -ml-1"><i class="fa-solid fa-angle-right"></i></button>
         </div>
     </section>
-    <!--NEWSLETTER: lg-->    
+    <!--NEWSLETTER: lg-------->
     <div class="hidden lg:flex max-w-7xl px-72 py-24 mx-auto items-center justify-between">
         <div>
             <input class="border-t-0 border-r-0 border-l-0 border-b-indigo-700 focus:ring-0 pl-0 pr-24" type="text" placeholder="Email address">
@@ -668,7 +670,7 @@
         </div>
         <p class="text-sm mt-3 text-slate-400">Copyright © 2022. KosAnt. All rights reserved.</p>
     </footer>
-    <!--FOOTER: lg-->
+    <!--FOOTER: lg------->
     <footer class="hidden lg:block max-w-7xl px-4 mx-auto mb-10 border-t-2"> 
         <div class="flex justify-around mt-8">
             <div class="mt-24">
