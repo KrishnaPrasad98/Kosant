@@ -1,1 +1,1 @@
-View project: https://kosant.netlify.app
+View project: https://kosantluxury.netlify.app
